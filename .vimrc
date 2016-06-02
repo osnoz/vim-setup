@@ -24,5 +24,7 @@ let g:syntastic_check_on_wq = 0
 
 " indentation
 filetype plugin indent on
-set tabstop=4 shiftwidth=4 expandtab
+set expandtab
+setlocal tabstop=4 shiftwidth=4
+autocmd Filetype html setlocal tabstop=2 shiftwidth=2
 
