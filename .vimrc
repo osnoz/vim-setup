@@ -39,3 +39,11 @@ autocmd Filetype html setlocal tabstop=2 shiftwidth=2
 autocmd InsertEnter * syn clear EOLWS | syn match EOLWS excludenl /\s\+\%#\@!$/
 autocmd InsertLeave * syn clear EOLWS | syn match EOLWS excludenl /\s\+$/
 highlight EOLWS ctermbg=red guibg=orange
+
+" highlight row and column
+set cursorline
+set cursorcolumn
+
+" text width
+set colorcolumn=80
+set textwidth=80
