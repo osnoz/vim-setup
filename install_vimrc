@@ -1,0 +1,4 @@
+./bundle/YouCompleteMe/install.py --all
+
+
+gvim +BundleInstall +qall
