@@ -35,3 +35,7 @@ set expandtab
 setlocal tabstop=4 shiftwidth=4
 autocmd Filetype html setlocal tabstop=2 shiftwidth=2
 
+" highlight whitespace
+autocmd InsertEnter * syn clear EOLWS | syn match EOLWS excludenl /\s\+\%#\@!$/
+autocmd InsertLeave * syn clear EOLWS | syn match EOLWS excludenl /\s\+$/
+highlight EOLWS ctermbg=red guibg=orange
