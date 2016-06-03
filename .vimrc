@@ -52,9 +52,10 @@ set cursorcolumn
 set colorcolumn=80
 set textwidth=79
 
-" dir tree mapping
+" dir tree panel
 map <A-Space> <plug>NERDTreeTabsToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+let g:nerdtree_tabs_open_on_gui_startup = 0
 
 " Enable folding
 set foldmethod=indent
