@@ -15,6 +15,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-scripts/indentpython.vim'
+Plugin 'jistr/vim-nerdtree-tabs'
 
 " syntastic default settings
 set statusline+=%#warningmsg#
@@ -51,7 +52,7 @@ set colorcolumn=80
 set textwidth=79
 
 " dir tree mapping
-map <A-Space> :NERDTreeToggle<CR>
+map <A-Space> <plug>NERDTreeTabsToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Enable folding
