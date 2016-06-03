@@ -29,7 +29,7 @@ let g:syntastic_check_on_wq = 0
 colorscheme solarized
 
 " encoding
-set expandtab
+set encoding=utf-8
 
 " indentation
 filetype plugin indent on
