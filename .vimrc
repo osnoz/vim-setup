@@ -13,6 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'scrooloose/nerdtree'
 
 " syntastic default settings
 set statusline+=%#warningmsg#
@@ -47,3 +48,12 @@ set cursorcolumn
 " text width
 set colorcolumn=80
 set textwidth=80
+
+" dir tree mapping
+map <A-Space> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" Enable folding
+set foldmethod=indent
+set foldlevel=99
+nnoremap <space> za
