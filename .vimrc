@@ -47,7 +47,7 @@ set cursorcolumn
 
 " text width
 set colorcolumn=80
-set textwidth=80
+set textwidth=79
 
 " dir tree mapping
 map <A-Space> :NERDTreeToggle<CR>
