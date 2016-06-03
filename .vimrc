@@ -60,3 +60,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 set foldmethod=indent
 set foldlevel=99
 nnoremap <space> za
+
+" syntastic, dont open split (error list)
+let g:syntastic_auto_loc_list = 0
