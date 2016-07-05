@@ -68,3 +68,8 @@ nnoremap <space> za
 
 " syntastic, dont open split (error list)
 let g:syntastic_auto_loc_list = 0
+
+" filetype associations
+augroup filetype
+    au! BufRead,BufnewFile *suite*.rc* set filetype=cylc
+augroup END
