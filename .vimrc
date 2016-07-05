@@ -79,3 +79,6 @@ augroup END
 augroup filetype " .t test files
     au BufRead,BufNewFile *.t set filetype=sh
 augroup END
+
+" yeah these things drive me nuts
+set noswapfile
