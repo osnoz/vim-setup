@@ -70,6 +70,12 @@ nnoremap <space> za
 let g:syntastic_auto_loc_list = 0
 
 " filetype associations
-augroup filetype
+augroup filetype " cylc
     au! BufRead,BufnewFile *suite*.rc* set filetype=cylc
+augroup END
+augroup filetype " rose
+    au! BufRead,BufNewFile rose-*.conf,rose-*.info set filetype=rose-conf
+augroup END
+augroup filetype " .t test files
+    au BufRead,BufNewFile *.t set filetype=sh
 augroup END
